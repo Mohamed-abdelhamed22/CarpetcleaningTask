@@ -7,13 +7,13 @@ double LargeCount = double.Parse(Console.ReadLine());
 
 System.Console.WriteLine($"Number of Small Carpets: {SmallCount}");
 System.Console.WriteLine($"Number of Large Carpets: {LargeCount}");
-System.Console.WriteLine($"Price per Small Carpet: {SmallPrice}");
-System.Console.WriteLine($"Price per Large Carpet: {LargePrice}");
+System.Console.WriteLine($"Price per Small Carpet: {SmallPrice:c}");
+System.Console.WriteLine($"Price per Large Carpet: {LargePrice:c}");
 double Cost = (SmallPrice * SmallCount) + (LargePrice * LargeCount);
-System.Console.WriteLine($"cost: {Cost}");
+System.Console.WriteLine($"cost: {Cost:c}");
 double Tax = Cost * TaxRate;
-System.Console.WriteLine($"Tax: {Tax}");
+System.Console.WriteLine($"Tax: {Tax:c}");
 double Total = Cost + Tax;
 Console.WriteLine("================================");
-System.Console.WriteLine($"Total estimate: {Total}");
+System.Console.WriteLine($"Total estimate: {Total:c}");
 System.Console.WriteLine(ValidationMessage);
